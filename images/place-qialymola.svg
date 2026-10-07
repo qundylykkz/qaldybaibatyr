@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="qialySky" x1="0" y1="0" x2="0" y2="100%">
+      <stop offset="0%" stop-color="#1B4958"/>
+      <stop offset="50%" stop-color="#2D6B7F"/>
+      <stop offset="80%" stop-color="#8DB6B7"/>
+      <stop offset="100%" stop-color="#E7D8BA"/>
+    </linearGradient>
+    <linearGradient id="steppeSand" x1="0" y1="0" x2="0" y2="100%">
+      <stop offset="0%" stop-color="#B89366"/>
+      <stop offset="100%" stop-color="#4F3822"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#qialySky)"/>
+  <!-- Vast Steppe Horizon and Distant Hills -->
+  <path d="M0,230 Q250,200 600,240 L600,400 L0,400 Z" fill="url(#steppeSand)"/>
+  <path d="M0,280 Q350,250 600,290 L600,400 L0,400 Z" fill="#422E1A"/>
+  <!-- Traditional Steppe Encampment & Yurts (Киіз үйлер) -->
+  <g transform="translate(140, 220)">
+    <!-- Yurt 1 -->
+    <path d="M0,40 Q30,10 60,40 L60,55 L0,55 Z" fill="#E2DAC8" stroke="#8A7660" stroke-width="1.5"/>
+    <ellipse cx="30" cy="40" rx="30" ry="12" fill="#D6CDBC"/>
+    <line x1="30" y1="20" x2="30" y2="55" stroke="#9E2A2B" stroke-width="1"/>
+    <!-- Yurt 2 -->
+    <path d="M80,45 Q105,20 130,45 L130,58 L80,58 Z" fill="#CFC4B0" stroke="#8A7660" stroke-width="1.5"/>
+    <!-- Cavalry Gathering Silhouettes -->
+    <ellipse cx="220" cy="50" rx="14" ry="7" fill="#241710"/>
+    <ellipse cx="250" cy="52" rx="14" ry="7" fill="#241710"/>
+    <line x1="210" y1="20" x2="215" y2="55" stroke="#241710" stroke-width="2"/>
+  </g>
+  <!-- Foreground Kazakh Ornament Accents -->
+  <circle cx="300" cy="380" r="4" fill="#C5A059"/>
+  <circle cx="320" cy="380" r="3" fill="#C5A059"/>
+  <circle cx="280" cy="380" r="3" fill="#C5A059"/>
+  <!-- Historical Badge -->
+  <rect x="25" y="25" width="200" height="34" rx="4" fill="#1B4958" opacity="0.9" stroke="#C5A059" stroke-width="1.5"/>
+  <text x="125" y="47" font-family="'Montserrat', sans-serif" font-size="12" font-weight="600" fill="#FFEBB3" text-anchor="middle">ӘСКЕРИ ТАКТИКАЛЫҚ ШТАБ</text>
+</svg>

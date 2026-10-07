@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Қалдыбай Қосаяқұлы (1775–1837) — Ұлт-азаттық көтеріліс қаһарманы</title>
+  <meta name="description" content="1836–1838 жылдардағы Исатай Тайманұлы мен Махамбет Өтемісұлы бастаған халық-азаттық көтерілісінің белгілі батыры, сарбазбасы және старшын Қалдыбай Қосаяқұлының тарихи-мәдени мұрасы.">
+  <meta name="keywords" content="Қалдыбай батыр, Қалдыбай Қосаяқұлы, Исатай Махамбет көтерілісі, Тастөбе шайқасы, Қарақұдық, Қазақ батырлары, Ысық руы, 1836-1838">
+  <meta name="author" content="Тарихи-мәдени мұра қоры">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Қалдыбай Қосаяқұлы (1775–1837)">
+  <meta property="og:description" content="1836–1838 жж. Исатай Тайманұлы мен Махамбет Өтемісұлы бастаған халық-азаттық көтерілісінің сарбазбасы және старшын.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/portrait.jpg">
+
+  <!-- Google Fonts: Cormorant Garamond & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="images/qoshqar-muyiz.svg">
+</head>
+<body>
+
+  <!-- Background Animated Kazakh Ornamental Medallions & Particle Canvas -->
+  <div class="bg-ornament-wrap" aria-hidden="true">
+    <div class="bg-ornament bg-ornament-1"></div>
+    <div class="bg-ornament bg-ornament-2"></div>
+    <div class="bg-ornament bg-ornament-3"></div>
+    <canvas id="ambientCanvas" class="ambient-canvas"></canvas>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Басты бетке өту">
+        <div class="logo-emblem">
+          <img src="images/qoshqar-muyiz.svg" alt="Қазақ оюы" class="logo-svg">
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title">ҚАЛДЫБАЙ БАТЫР</span>
+          <span class="logo-sub">1775 – 1837</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" id="mainNav" aria-label="Негізгі навигация">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Басты бөлім</a></li>
+          <li><a href="#bio-facts" class="nav-link">Өмірдерек</a></li>
+          <li><a href="#videos" class="nav-link">Бейнедеректер</a></li>
+          <li><a href="#places" class="nav-link">Тарихи орындар</a></li>
+          <li><a href="#book" class="nav-link">Кітап</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Utilities: Ambient Audio Toggle & Mobile Menu Button -->
+      <div class="header-actions">
+        <button id="ambientSoundBtn" class="action-icon-btn" title="Дала үнін қосу / өшіру" aria-label="Дала үнін қосу немесе өшіру">
+          <svg class="sound-icon sound-icon-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+          <svg class="sound-icon sound-icon-on hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+          </svg>
+          <span class="btn-label-text">Дала үні</span>
+        </button>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Мәзірді ашу" aria-expanded="false" aria-controls="mainNav">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+    <div class="header-ornament-border" aria-hidden="true"></div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="nav-drawer-backdrop" id="navBackdrop" aria-hidden="true"></div>
+
+  <main id="mainContent">
+
+    <!-- ========================================================
+         SECTION 1: HERO / LANDING SECTION (HTML & CSS)
+         ======================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <!-- Hero Introduction Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-ornament" aria-hidden="true">❖</span>
+            <span class="badge-text">1836–1838 ЖЫЛДАРДАҒЫ ХАЛЫҚ-АЗАТТЫҚ КӨТЕРІЛІСІ</span>
+            <span class="badge-ornament" aria-hidden="true">❖</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-title-name">Қалдыбай Қосаяқұлы</span>
+            <span class="hero-title-dates">(1775–1837)</span>
+          </h1>
+
+          <div class="hero-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-symbol">◈</span>
+            <span class="divider-line"></span>
+          </div>
+
+          <p class="hero-subtitle">
+            1836–1838 жылдары Бөкей Ордасында болған Исатай Тайманұлы мен Махамбет Өтемісұлы бастаған халық-азаттық көтерілісінің белгілі батыры, сарбазбасы және старшын
+          </p>
+
+          <!-- Proverb Box (Қанатты сөздер) -->
+          <aside class="proverb-box" aria-label="Батырлық туралы қанатты сөздер">
+            <div class="proverb-icon" aria-hidden="true">“</div>
+            <div class="proverb-lines">
+              <blockquote class="proverb-item">
+                <span class="proverb-quote">» "Ер есімі – ел есінде"</span>
+              </blockquote>
+              <blockquote class="proverb-item">
+                <span class="proverb-quote">» "Батыр туса – ел ырысы, Жаңбыр жауса – жер ырысы"</span>
+              </blockquote>
+            </div>
+            <div class="proverb-bottom-decor" aria-hidden="true">
+              <span class="small-ornament">✦</span>
+              <span class="small-line"></span>
+              <span class="small-ornament">✦</span>
+            </div>
+          </aside>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#bio-facts" class="btn btn-primary">
+              <span>Өмірдерекке көшу</span>
+              <svg class="btn-arrow" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#videos" class="btn btn-secondary">
+              <span>Бейнедеректер</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Portrait: Interactive Image Frame with Metallic/Gold Border -->
+        <div class="hero-visual">
+          <div class="hero-portrait-card" id="heroPortraitCard">
+            <!-- Glow backlight -->
+            <div class="portrait-ambient-glow" aria-hidden="true"></div>
+
+            <!-- Outer Metallic Gold Frame with Kazakh Corner Ornaments -->
+            <div class="metallic-gold-frame">
+              <div class="frame-corner frame-corner-tl" aria-hidden="true"></div>
+              <div class="frame-corner frame-corner-tr" aria-hidden="true"></div>
+              <div class="frame-corner frame-corner-bl" aria-hidden="true"></div>
+              <div class="frame-corner frame-corner-br" aria-hidden="true"></div>
+
+              <div class="portrait-image-wrapper">
+                <img src="images/portrait.jpg" alt="Қалдыбай батыр портреті" class="portrait-img" id="portraitImg" loading="eager">
+                <div class="portrait-glare-overlay" id="portraitGlare" aria-hidden="true"></div>
+              </div>
+
+              <!-- Portrait Bottom Brass Plate -->
+              <div class="portrait-brass-plate">
+                <span class="brass-title">ҚАЛДЫБАЙ БАТЫР</span>
+                <span class="brass-tag">«ҚЫЗЫЛ КӨЗ ҚАЛДЫБАЙ»</span>
+              </div>
+            </div>
+
+            <!-- Floating Fact Tag -->
+            <div class="portrait-floating-tag">
+              <span class="tag-icon">⚔</span>
+              <span class="tag-text">Көтеріліс сарбазбасы</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bio Quick-Facts Grid (Section 1 Extension) -->
+      <div class="container bio-facts-section" id="bio-facts">
+        <div class="section-header text-center">
+          <span class="section-tag">ШЕЖІРЕ ЖӘНЕ МҰРА</span>
+          <h2 class="section-title">Қалдыбай батыр: Тарихи деректер кестесі</h2>
+          <div class="ornament-divider">
+            <span class="ornament-line"></span>
+            <img src="images/qoshqar-muyiz.svg" alt="Ою" class="ornament-icon-sm">
+            <span class="ornament-line"></span>
+          </div>
+          <p class="section-subtitle">
+            Мұрағаттық құжаттар мен тарихи зерттеулерде сақталған нақты мәліметтер
+          </p>
+        </div>
+
+        <div class="facts-grid">
+          
+          <!-- Fact 1: Туған жері мен уақыты -->
+          <article class="fact-card" data-index="1">
+            <div class="fact-card-corner tl"></div>
+            <div class="fact-card-corner br"></div>
+            <div class="fact-card-header">
+              <div class="fact-badge-num">01</div>
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="fact-title">Туған жері мен уақыты</h3>
+            <p class="fact-content">
+              <strong>1775 жылы</strong> Тептер өзені бойындағы ата қонысында дүниеге келген.
+            </p>
+            <div class="fact-card-footer">
+              <span class="fact-meta">Тептер өзені бойы</span>
+            </div>
+          </article>
+
+          <!-- Fact 2: Шығу тегі (Руы) -->
+          <article class="fact-card" data-index="2">
+            <div class="fact-card-corner tl"></div>
+            <div class="fact-card-corner br"></div>
+            <div class="fact-card-header">
+              <div class="fact-badge-num">02</div>
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="fact-title">Шығу тегі (Руы)</h3>
+            <p class="fact-content">
+              12 ата Байұлы бірлестігіне кіретін <strong>Ысық руының Қараораз аталығынан</strong> тарайды.
+            </p>
+            <div class="fact-card-footer">
+              <span class="fact-meta">Байұлы / Ысық / Қараораз</span>
+            </div>
+          </article>
+
+          <!-- Fact 3: Лақап аты -->
+          <article class="fact-card highlight-card" data-index="3">
+            <div class="fact-card-corner tl"></div>
+            <div class="fact-card-corner br"></div>
+            <div class="fact-card-header">
+              <div class="fact-badge-num">03</div>
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+            </div>
+            <h3 class="fact-title">Лақап аты</h3>
+            <p class="fact-content">
+              Замандастары қайтпас өжеттігіне, жаудан тайсалмайтын көзсіз батырлығына бола <strong>«Қызыл көз Қалдыбай»</strong> деп атаған.
+            </p>
+            <div class="fact-card-footer">
+              <span class="fact-meta">«Қызыл көз Қалдыбай»</span>
+            </div>
+          </article>
+
+          <!-- Fact 4: Отбасы мен ұрпағы -->
+          <article class="fact-card" data-index="4">
+            <div class="fact-card-corner tl"></div>
+            <div class="fact-card-corner br"></div>
+            <div class="fact-card-header">
+              <div class="fact-badge-num">04</div>
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="fact-title">Отбасы мен ұрпағы</h3>
+            <p class="fact-content">
+              Көтеріліске ауыл-аймағымен және <strong>Қабыланбай, Иманбай, Смағүл, Жапалақ, Қали</strong> есімді ұлдарымен бірге қатысқан. Ұлы <strong>Қабыланбай Қалдыбайұлы</strong> — Исатай мен Махамбеттен кейінгі көтерілісшілер арасындағы беделді басшылардың бірі.
+            </p>
+            <div class="fact-card-footer">
+              <span class="fact-meta">Қабыланбай, Иманбай, Смағүл, Жапалақ, Қали</span>
+            </div>
+          </article>
+
+          <!-- Fact 5: Азаттық күресі -->
+          <article class="fact-card" data-index="5">
+            <div class="fact-card-corner tl"></div>
+            <div class="fact-card-corner br"></div>
+            <div class="fact-card-header">
+              <div class="fact-badge-num">05</div>
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+            </div>
+            <h3 class="fact-title">Азаттық күресі</h3>
+            <p class="fact-content">
+              Жәңгір хан мен патша өкіметінің отаршылдығына қарсы шығып, алым-салық төлеуден бас тартқан. Жазалаушыларға қарсы сарбаздарын бастап күрескен.
+            </p>
+            <div class="fact-card-footer">
+              <span class="fact-meta">Отаршылдыққа қарсы күрес</span>
+            </div>
+          </article>
+
+          <!-- Fact 6: Қаза табуы -->
+          <article class="fact-card battle-card" data-index="6">
+            <div class="fact-card-corner tl"></div>
+            <div class="fact-card-corner br"></div>
+            <div class="fact-card-header">
+              <div class="fact-badge-num">06</div>
+              <div class="fact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </div>
+            </div>
+            <h3 class="fact-title">Қаза табуы</h3>
+            <p class="fact-content">
+              1837 жылы 15 қарашадағы Тастөбе шайқасынан соң, <strong>22 қарашада Қарақұдық</strong> деген жерде жазалаушы отрядпен болған кескілескен шайқаста қаза тапқан.
+            </p>
+            <div class="fact-card-footer">
+              <span class="fact-meta">1837 ж. 22 қараша / Қарақұдық</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Kazakh Ornamental Transition Divider -->
+    <div class="frieze-divider" aria-hidden="true"></div>
+
+    <!-- ========================================================
+         SECTION 2: CREATIVE VIDEO GALLERY (HTML, CSS & JS)
+         ======================================================== -->
+    <section class="videos-section" id="videos">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">МУЛЬТИМЕДИА</span>
+          <h2 class="section-title">Батыр туралы бейнедеректер</h2>
+          <div class="ornament-divider">
+            <span class="ornament-line"></span>
+            <img src="images/qoshqar-muyiz.svg" alt="Ою" class="ornament-icon-sm">
+            <span class="ornament-line"></span>
+          </div>
+          <p class="section-subtitle">
+            Тарихи зерттеулер мен көтеріліс шежіресі бойынша арнайы дайындалған бейнебаяндар
+          </p>
+        </div>
+
+        <!-- Video Gallery Grid with CSS hover glow effects & Kazakh ornament overlay -->
+        <div class="video-gallery-grid">
+
+          <!-- Video Card 1 -->
+          <article class="video-card" data-video-src="video/1.mp4" data-video-title="Қалдыбай батыр: Ұлт-азаттық қозғалыстағы сардарлық жолы">
+            <div class="video-card-inner">
+              <!-- Video Frame with Ornamental Glow Overlay -->
+              <div class="video-media-wrapper">
+                <video controls class="native-video" poster="images/tastobe.jpg">
+                  <source src="video/1.mp4" type="video/mp4">
+                </video>
+
+                <!-- Kazakh Ornament Overlay on Hover -->
+                <div class="video-ornament-overlay" aria-hidden="true">
+                  <div class="overlay-ornament-center">
+                    <img src="images/qoshqar-muyiz.svg" alt="Қазақ оюы" class="pulse-ornament">
+                    <span class="play-action-chip">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                      </svg>
+                      Толық көру
+                    </span>
+                  </div>
+                </div>
+
+                <div class="video-badge">БЕЙНЕЖАЗБА 1</div>
+              </div>
+
+              <!-- Video Card Information -->
+              <div class="video-card-body">
+                <h3 class="video-card-title">Қалдыбай батыр: Ұлт-азаттық қозғалыстағы сардарлық жолы</h3>
+                <p class="video-card-desc">
+                  Исатай Тайманұлы мен Махамбет Өтемісұлының сенімді серігі, мыңбасы сарбазбасы Қалдыбай Қосаяқұлының батырлық өмір жолы туралы деректі баян.
+                </p>
+                <div class="video-card-action">
+                  <button type="button" class="btn-play-trigger" aria-label="1-бейнежазбаны толық көлемде ашу">
+                    <svg viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                    </svg>
+                    <span>Толық экранда көру</span>
+                  </button>
+                  <span class="video-format-pill">MP4 • 1080p</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Video Card 2 -->
+          <article class="video-card" data-video-src="video/2.mp4" data-video-title="Тастөбе мен Қарақұдық: Батырдың соңғы кескілескен соғысы">
+            <div class="video-card-inner">
+              <!-- Video Frame with Ornamental Glow Overlay -->
+              <div class="video-media-wrapper">
+                <video controls class="native-video" poster="images/qialymola.jpg">
+                  <source src="video/2.mp4" type="video/mp4">
+                </video>
+
+                <!-- Kazakh Ornament Overlay on Hover -->
+                <div class="video-ornament-overlay" aria-hidden="true">
+                  <div class="overlay-ornament-center">
+                    <img src="images/qoshqar-muyiz.svg" alt="Қазақ оюы" class="pulse-ornament">
+                    <span class="play-action-chip">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                      </svg>
+                      Толық көру
+                    </span>
+                  </div>
+                </div>
+
+                <div class="video-badge">БЕЙНЕЖАЗБА 2</div>
+              </div>
+
+              <!-- Video Card Information -->
+              <div class="video-card-body">
+                <h3 class="video-card-title">Тастөбе мен Қарақұдық: Батырдың соңғы кескілескен соғысы</h3>
+                <p class="video-card-desc">
+                  1837 жылдың 15 қарашасындағы Тастөбе шайқасы мен 22 қарашадағы Қарақұдықтағы жазалаушы отрядпен болған ақтық шайқас тарихы.
+                </p>
+                <div class="video-card-action">
+                  <button type="button" class="btn-play-trigger" aria-label="2-бейнежазбаны толық көлемде ашу">
+                    <svg viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                    </svg>
+                    <span>Толық экранда көру</span>
+                  </button>
+                  <span class="video-format-pill">MP4 • 1080p</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Video Gallery Informative Note -->
+        <div class="video-note-banner">
+          <div class="note-icon">ℹ</div>
+          <p class="note-text">
+            Бейнежазба карточкасын басқанда бейнематериал толық экранды қарау терезесінде (Full-screen Modal) ашылады.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Kazakh Ornamental Transition Divider -->
+    <div class="frieze-divider" aria-hidden="true"></div>
+
+    <!-- ========================================================
+         SECTION 3: HISTORICAL PLACES (ТАРИХИ ОРЫНДАР)
+         ======================================================== -->
+    <section class="places-section" id="places">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">ТАРИХИ КАРТА МЕН ТОПОНИМИКА</span>
+          <h2 class="section-title">Батыр ізі қалған тарихи орындар</h2>
+          <div class="ornament-divider">
+            <span class="ornament-line"></span>
+            <img src="images/qoshqar-muyiz.svg" alt="Ою" class="ornament-icon-sm">
+            <span class="ornament-line"></span>
+          </div>
+          <p class="section-subtitle">
+            Азаттық күресінің өшпес ізі қалған қасиетті қоныстар мен майдан далалары
+          </p>
+        </div>
+
+        <!-- Interactive Filter / View Switcher (Tab Controls) -->
+        <div class="places-tabs-control" role="tablist" aria-label="Тарихи орындарды таңдау">
+          <button class="place-tab-btn active" role="tab" aria-selected="true" data-tab="all" id="tab-all">
+            Барлық мекендер (3)
+          </button>
+          <button class="place-tab-btn" role="tab" aria-selected="false" data-tab="tastobe" id="tab-tastobe">
+            1. Тастөбе (Tastobe)
+          </button>
+          <button class="place-tab-btn" role="tab" aria-selected="false" data-tab="qialymola" id="tab-qialymola">
+            2. Қиялымола (Qialymola)
+          </button>
+          <button class="place-tab-btn" role="tab" aria-selected="false" data-tab="terektykum" id="tab-terektykum">
+            3. Теректіқұм (Terektykum)
+          </button>
+        </div>
+
+        <!-- 3 Interactive Cards with JS tab/accordion toggle and smooth hover animation -->
+        <div class="places-grid" id="placesGrid">
+
+          <!-- Historical Place 1: Тастөбе (Tastobe) -->
+          <article class="place-card" data-place="tastobe" tabindex="0">
+            <div class="place-card-frame">
+              
+              <div class="place-image-holder">
+                <img src="images/tastobe.jpg" alt="Тастөбе шайқасы" class="place-image" loading="lazy">
+                <div class="place-overlay-gradient"></div>
+                <div class="place-coordinates-badge">
+                  <span class="badge-dot"></span>
+                  <span>1837 ж. 15 қараша</span>
+                </div>
+              </div>
+
+              <div class="place-card-content">
+                <div class="place-number">01</div>
+                <h3 class="place-title">Тастөбе <span class="place-lat">(Tastobe)</span></h3>
+                
+                <p class="place-description">
+                  1837 жылы 15 қарашада болған шешуші Тастөбе шайқасы. Қалдыбай батыр сарбаздарымен соңғы деміне дейін ерлікпен соғысқан.
+                </p>
+
+                <!-- Accordion / Detail Toggle Section -->
+                <div class="place-accordion-body" id="acc-tastobe">
+                  <div class="accordion-inner">
+                    <div class="history-metric">
+                      <span class="metric-title">Шайқас маңызы:</span>
+                      <span class="metric-val">Көтерілістің ең ірі әрі тағдыршешті қарулы қақтығысы</span>
+                    </div>
+                    <div class="history-metric">
+                      <span class="metric-title">Қалдыбай батыр рөлі:</span>
+                      <span class="metric-val">Қарулас сарбаздарды бастап майданның алдыңғы шебінде шайқасты</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="place-card-actions">
+                  <button type="button" class="place-toggle-btn" aria-expanded="false" aria-controls="acc-tastobe">
+                    <span class="toggle-text">Толығырақ білу</span>
+                    <svg class="toggle-chevron" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+          </article>
+
+          <!-- Historical Place 2: Қиялымола (Qialymola) -->
+          <article class="place-card" data-place="qialymola" tabindex="0">
+            <div class="place-card-frame">
+              
+              <div class="place-image-holder">
+                <img src="images/qialymola.jpg" alt="Қиялымола" class="place-image" loading="lazy">
+                <div class="place-overlay-gradient"></div>
+                <div class="place-coordinates-badge">
+                  <span class="badge-dot"></span>
+                  <span>Әскери тактикалық мекен</span>
+                </div>
+              </div>
+
+              <div class="place-card-content">
+                <div class="place-number">02</div>
+                <h3 class="place-title">Қиялымола <span class="place-lat">(Qialymola)</span></h3>
+                
+                <p class="place-description">
+                  Көтерілісшілердің отаршылдарға қарсы әскери маневрлары мен тактикалық соққылары ұйымдастырылған тарихи мекен.
+                </p>
+
+                <!-- Accordion / Detail Toggle Section -->
+                <div class="place-accordion-body" id="acc-qialymola">
+                  <div class="accordion-inner">
+                    <div class="history-metric">
+                      <span class="metric-title">Мекен мәртебесі:</span>
+                      <span class="metric-val">Әскери кеңес өткізіліп, сарбаздарды қайта сапқа тұрғызу нүктесі</span>
+                    </div>
+                    <div class="history-metric">
+                      <span class="metric-title">Қалдыбай батыр рөлі:</span>
+                      <span class="metric-val">Сарбазбасы ретінде тактикалық жоспарлауға белсене қатысты</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="place-card-actions">
+                  <button type="button" class="place-toggle-btn" aria-expanded="false" aria-controls="acc-qialymola">
+                    <span class="toggle-text">Толығырақ білу</span>
+                    <svg class="toggle-chevron" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+          </article>
+
+          <!-- Historical Place 3: Теректіқұм (Terektykum) -->
+          <article class="place-card" data-place="terektykum" tabindex="0">
+            <div class="place-card-frame">
+              
+              <div class="place-image-holder">
+                <img src="images/terektykum.jpg" alt="Теректіқұм" class="place-image" loading="lazy">
+                <div class="place-overlay-gradient"></div>
+                <div class="place-coordinates-badge">
+                  <span class="badge-dot"></span>
+                  <span>Стратегиялық аймақ</span>
+                </div>
+              </div>
+
+              <div class="place-card-content">
+                <div class="place-number">03</div>
+                <h3 class="place-title">Теректіқұм <span class="place-lat">(Terektykum)</span></h3>
+                
+                <p class="place-description">
+                  Көтерілісші сарбаздар шоғырланған, дайындық жүргізген және күрес рухын көтерген стратегиялық аймақ.
+                </p>
+
+                <!-- Accordion / Detail Toggle Section -->
+                <div class="place-accordion-body" id="acc-terektykum">
+                  <div class="accordion-inner">
+                    <div class="history-metric">
+                      <span class="metric-title">Аймақ ерекшелігі:</span>
+                      <span class="metric-val">Құм шағылдары мен терек тоғайларының табиғи қорғаныс бекінісі</span>
+                    </div>
+                    <div class="history-metric">
+                      <span class="metric-title">Қалдыбай батыр рөлі:</span>
+                      <span class="metric-val">Ысық руының сарбаздарын топтастырып, рухтандырған қолбасшы</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="place-card-actions">
+                  <button type="button" class="place-toggle-btn" aria-expanded="false" aria-controls="acc-terektykum">
+                    <span class="toggle-text">Толығырақ білу</span>
+                    <svg class="toggle-chevron" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Kazakh Ornamental Transition Divider -->
+    <div class="frieze-divider" aria-hidden="true"></div>
+
+    <!-- ========================================================
+         SECTION 4: STORYBOOK (KITAP)
+         ======================================================== -->
+    <section class="storybook-section" id="book">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">ШЕЖІРЕ КІТАБЫ</span>
+          <h2 class="section-title">Батыр жолы: Тарихи интерактивті кітап</h2>
+          <div class="ornament-divider">
+            <span class="ornament-line"></span>
+            <img src="images/qoshqar-muyiz.svg" alt="Ою" class="ornament-icon-sm">
+            <span class="ornament-line"></span>
+          </div>
+          <p class="section-subtitle">
+            Мұрағаттық құжаттар мен ел аузындағы аңыздар жинақталған құнды туынды
+          </p>
+        </div>
+
+        <div class="storybook-wrapper">
+          
+          <!-- Left/Center 3D CSS Book Cover Display -->
+          <div class="book-3d-stage" id="bookStage">
+            
+            <div class="book-object" id="bookObject">
+              
+              <!-- Book Front Cover -->
+              <div class="book-front-cover">
+                <img src="images/storybook_cover.jpg" alt="Storybook мұқабасы" class="book-cover-art">
+                <!-- Glossy Foil Reflection -->
+                <div class="book-foil-glint" id="bookFoilGlint" aria-hidden="true"></div>
+              </div>
+
+              <!-- Book Spine (Омыртқасы) -->
+              <div class="book-spine">
+                <span class="spine-text">САРБАЗ ЖОЛЫ: ҚАЛДЫБАЙ БАТЫРДЫҢ ЕРЛІГІ</span>
+                <span class="spine-year">1836–1838</span>
+              </div>
+
+              <!-- Book Pages Block (Беттерінің қалыңдығы) -->
+              <div class="book-pages-side"></div>
+              <div class="book-pages-top"></div>
+              <div class="book-pages-bottom"></div>
+
+              <!-- Book Back Cover -->
+              <div class="book-back-cover"></div>
+
+              <!-- Bookmark Ribbon (Бетбелгі) -->
+              <div class="bookmark-ribbon" aria-hidden="true"></div>
+
+            </div>
+
+            <!-- Floor 3D Shadow -->
+            <div class="book-floor-shadow" aria-hidden="true"></div>
+
+          </div>
+
+          <!-- Storybook Description and Interactive Read Action -->
+          <div class="storybook-details">
+            <div class="book-badge-chip">
+              <span class="chip-star">★</span>
+              <span>АРНАЙЫ ЭЛЕКТРОНДЫ БАСЫЛЫМ</span>
+            </div>
+
+            <h3 class="storybook-title">Сарбаз жолы: Қалдыбай батырдың ерлігі</h3>
+            
+            <p class="storybook-desc">
+              Бұл еңбекте 1836–1838 жылдардағы Исатай Тайманұлы мен Махамбет Өтемісұлы бастаған ұлт-азаттық қозғалыстың басты сарбазбасы болған Қалдыбай Қосаяқұлының өмір жолы, Ысық руы сарбаздарының ерлігі, Тастөбе мен Қарақұдық соғыстарының тың деректері кеңінен баяндалады.
+            </p>
+
+            <div class="book-specifications-grid">
+              <div class="spec-item">
+                <span class="spec-label">Пішімі:</span>
+                <span class="spec-value">PDF сандық нұсқа</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Тілі:</span>
+                <span class="spec-value">Қазақ тілі (кирилл)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Дереккөздер:</span>
+                <span class="spec-value">Орынбор мұрағаттары</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Қолжетімділік:</span>
+                <span class="spec-value">Ашық кіру мүмкіндігі</span>
+              </div>
+            </div>
+
+            <!-- Interactive Action Button below book: Exactly as specified by technical requirements -->
+            <div class="storybook-action-box">
+              <a href="https://share.gemini.google/cVzLWucaiyKF" target="_blank" rel="noopener noreferrer" class="btn-read" id="readBtn">Кітапты оқу</a>
+
+              <p class="read-btn-hint">
+                Батырманы басқанда кітап материалдары жаңа қойындыда (Google Drive) ашылады.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================
+       FOOTER (HTML & CSS)
+       ======================================================== -->
+  <footer class="site-footer">
+    <!-- Kazakh Ornamental Border SVG at the top of footer -->
+    <div class="footer-ornament-border" aria-hidden="true">
+      <img src="images/ornament-border.svg" alt="Қазақ ою жиегі" class="footer-frieze-svg">
+    </div>
+
+    <div class="container footer-content-container">
+      
+      <div class="footer-top-row">
+        <!-- Footer Brand -->
+        <div class="footer-brand">
+          <div class="footer-brand-title">
+            <img src="images/qoshqar-muyiz.svg" alt="Ою" class="footer-logo-icon">
+            <span>ҚАЛДЫБАЙ ҚОСАЯҚҰЛЫ</span>
+          </div>
+          <p class="footer-brand-desc">
+            1836–1838 жылдардағы Исатай-Махамбет бастаған ұлт-азаттық қозғалысының сарбазбасы, Ысық руының старшыны және батыры.
+          </p>
+        </div>
+
+        <!-- Quick Navigation Links -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Бөлімдер</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#hero">Басты бет</a></li>
+            <li><a href="#bio-facts">Өмірдерек кестесі</a></li>
+            <li><a href="#videos">Бейнедеректер</a></li>
+            <li><a href="#places">Тарихи орындар</a></li>
+            <li><a href="#book">Кітапты оқу</a></li>
+          </ul>
+        </div>
+
+        <!-- Historical Heritage Notice -->
+        <div class="footer-quote-col">
+          <h4 class="footer-col-title">Тарихи тағылым</h4>
+          <p class="footer-proverb-text">
+            «Батыр туса – ел ырысы, Жаңбыр жауса – жер ырысы. Ер есімі ел жадында мәңгі сақталады.»
+          </p>
+          <div class="footer-date-tag">1775 – 1837 • Дала қаһармандары</div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-divider"></div>
+
+      <!-- Copyright Notice -->
+      <div class="footer-bottom-row">
+        <p class="copyright-text">
+          © 2026 Қалдыбай Қосаяқұлы батырдың тарихи-мәдени мұрасы.
+        </p>
+        <button id="backToTopBtn" class="back-to-top" title="Жоғарыға оралу" aria-label="Парақтың басына оралу">
+          <span>Жоғарыға</span>
+          <svg viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       VIDEO MODAL POPUP (HTML, CSS & JS)
+       ======================================================== -->
+  <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="modalVideoTitle" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-container">
+      
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <img src="images/qoshqar-muyiz.svg" alt="Ою" class="modal-icon">
+          <h3 class="modal-title" id="modalVideoTitle">Бейнематериал</h3>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Бейне терезесін жабу">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-video-wrap">
+        <video id="modalVideoPlayer" class="modal-video-element" controls playsinline>
+          <source src="" type="video/mp4">
+          Сіздің браузеріңіз бейне ойнатқышты қолдамайды.
+        </video>
+        <!-- Canvas simulation fallback when placeholder media has no stream -->
+        <canvas id="modalVideoCanvas" class="modal-video-canvas hidden"></canvas>
+      </div>
+
+      <div class="modal-footer">
+        <p class="modal-caption" id="modalVideoCaption">
+          Қалдыбай батыр туралы тарихи бейнедерек.
+        </p>
+        <div class="modal-keyboard-hint">
+          <kbd>ESC</kbd> түймесі жабу үшін
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

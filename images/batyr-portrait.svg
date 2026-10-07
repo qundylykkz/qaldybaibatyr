@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <radialGradient id="skyGlow" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FDE8B5"/>
+      <stop offset="40%" stop-color="#E2A855"/>
+      <stop offset="70%" stop-color="#9C5229"/>
+      <stop offset="100%" stop-color="#2C1D18"/>
+    </radialGradient>
+    <linearGradient id="armorSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8C9398"/>
+      <stop offset="45%" stop-color="#4E555C"/>
+      <stop offset="70%" stop-color="#2D3338"/>
+      <stop offset="100%" stop-color="#1A1E22"/>
+    </linearGradient>
+    <linearGradient id="goldDecor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="50%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#87621B"/>
+    </linearGradient>
+    <linearGradient id="capeTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B4958"/>
+      <stop offset="60%" stop-color="#12303A"/>
+      <stop offset="100%" stop-color="#0A1D24"/>
+    </linearGradient>
+    <linearGradient id="faceShade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E7B288"/>
+      <stop offset="50%" stop-color="#C88B5D"/>
+      <stop offset="100%" stop-color="#945833"/>
+    </linearGradient>
+    <filter id="steppesGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="intenseEyes" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#E54B24" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Background: Vast Steppe Sunset and War Flags -->
+  <rect width="600" height="800" fill="url(#skyGlow)"/>
+  
+  <!-- Distant Mountains & Steppe Rolling Hills -->
+  <path d="M0,520 Q150,490 300,510 T600,495 L600,800 L0,800 Z" fill="#3D261C" opacity="0.8"/>
+  <path d="M0,560 Q200,530 400,550 T600,540 L600,800 L0,800 Z" fill="#241712"/>
+
+  <!-- Distant Batyr Cavalry & Banners Silhouettes -->
+  <g opacity="0.35" fill="#FFEBB3">
+    <!-- Battle spears & Tu (ту - horsehair battle banners) -->
+    <line x1="80" y1="360" x2="60" y2="520" stroke="#FFEBB3" stroke-width="3"/>
+    <path d="M60,370 Q45,390 50,420 Q70,410 60,370" fill="#FFEBB3"/>
+    <line x1="120" y1="390" x2="110" y2="520" stroke="#FFEBB3" stroke-width="2"/>
+    <line x1="500" y1="350" x2="520" y2="520" stroke="#FFEBB3" stroke-width="3"/>
+    <path d="M520,360 Q545,380 540,410 Q515,400 520,360" fill="#FFEBB3"/>
+    <line x1="470" y1="380" x2="480" y2="520" stroke="#FFEBB3" stroke-width="2"/>
+  </g>
+
+  <!-- Steppe Dust and Sunrise Atmosphere Particles -->
+  <circle cx="300" cy="280" r="140" fill="#FFC875" opacity="0.25" filter="url(#steppesGlow)"/>
+
+  <!-- Batyr Figure (Qaldybai Batyr) -->
+  <g transform="translate(0, 40)">
+    <!-- Dark War Cape (Шапан / Күпі) with Kazakh Gold Embroidery -->
+    <path d="M120,430 C120,340 180,310 240,300 L360,300 C420,310 480,340 480,430 L550,760 L50,760 Z" fill="url(#capeTeal)"/>
+    <!-- Cape Fold Shadows & Highlights -->
+    <path d="M210,310 Q190,520 140,760" stroke="#0C2028" stroke-width="12" fill="none" opacity="0.6"/>
+    <path d="M390,310 Q410,520 460,760" stroke="#0C2028" stroke-width="12" fill="none" opacity="0.6"/>
+    <path d="M300,320 L300,760" stroke="#0C2028" stroke-width="8" opacity="0.4"/>
+
+    <!-- Gold Embroidered Lapels (Оюлы өңір) -->
+    <path d="M240,300 L200,600 L230,600 L260,320 Z" fill="url(#goldDecor)"/>
+    <path d="M360,300 L400,600 L370,600 L340,320 Z" fill="url(#goldDecor)"/>
+
+    <!-- Chainmail / Torso Armor (Сауыт - бадана сауыт) -->
+    <path d="M230,320 C230,320 250,310 300,310 C350,310 370,320 370,320 L390,560 C390,580 370,620 300,620 C230,620 210,580 210,560 Z" fill="url(#armorSteel)"/>
+    
+    <!-- Torso Steel Plates (Күбе / сауыт пластиналары) -->
+    <g fill="none" stroke="url(#goldDecor)" stroke-width="2" opacity="0.85">
+      <!-- Ornamental Chest Medallion -->
+      <circle cx="300" cy="420" r="45" fill="#21262B" stroke="url(#goldDecor)" stroke-width="3"/>
+      <circle cx="300" cy="420" r="35" stroke="url(#goldDecor)" stroke-dasharray="4,3"/>
+      <path d="M300,390 C290,410 280,415 280,420 C280,425 290,430 300,450 C310,430 320,425 320,420 C320,415 310,410 300,390 Z" fill="url(#goldDecor)"/>
+      <path d="M270,420 C290,410 295,400 300,400 C305,400 310,410 330,420 C310,430 305,440 300,440 C295,440 290,430 270,420 Z" fill="url(#goldDecor)"/>
+      
+      <!-- Torso Horizontals -->
+      <path d="M225,480 Q300,500 375,480"/>
+      <path d="M220,520 Q300,540 380,520"/>
+      <path d="M225,560 Q300,580 375,560"/>
+    </g>
+
+    <!-- Broad Warrior Leather Belt with Silver/Turquoise Buckles (Кісе белдік) -->
+    <rect x="200" y="600" width="200" height="32" rx="4" fill="#3D2314" stroke="url(#goldDecor)" stroke-width="2.5"/>
+    <rect x="280" y="596" width="40" height="40" rx="6" fill="url(#goldDecor)"/>
+    <rect x="290" y="606" width="20" height="20" rx="3" fill="#1B4958"/>
+
+    <!-- Neck & Throat Guard (Мойын сауыт) -->
+    <path d="M260,260 L340,260 L350,310 L250,310 Z" fill="url(#armorSteel)"/>
+    <path d="M265,270 L335,270" stroke="url(#goldDecor)" stroke-width="2"/>
+
+    <!-- Face & Beard of Qaldybai Batyr -->
+    <!-- Strong Jaw & Cheeks -->
+    <path d="M250,200 C245,260 265,300 300,305 C335,300 355,260 350,200 Z" fill="url(#faceShade)"/>
+    <!-- Majestic Warrior Beard & Mustache (Қазақы батыр сақалы мен мұрты) -->
+    <path d="M260,235 C270,225 290,228 300,233 C310,228 330,225 340,235 C350,248 335,260 325,255 C315,250 305,258 300,262 C295,258 285,250 275,255 C265,260 250,248 260,235 Z" fill="#1C1816"/>
+    <!-- Full Black/Grizzled Beard -->
+    <path d="M260,245 C255,290 275,340 300,345 C325,340 345,290 340,245 C330,270 315,280 300,282 C285,280 270,270 260,245 Z" fill="#1A1513"/>
+    
+    <!-- Noble Facial Features: Weathered Steppe Eyes, Sharp Nose -->
+    <!-- Piercing Eyes: "Қызыл көз Қалдыбай" - Fearless, Burning, Courageous -->
+    <g filter="url(#intenseEyes)">
+      <!-- Left Eye -->
+      <path d="M265,195 Q278,190 288,196 Q278,202 265,195 Z" fill="#FFF"/>
+      <ellipse cx="277" cy="195" rx="4" ry="4" fill="#69160F"/>
+      <circle cx="277" cy="195" r="2.5" fill="#1C1410"/>
+      <circle cx="278.5" cy="193.5" r="1.2" fill="#FFE4D6"/>
+      <path d="M262,189 Q278,185 290,192" stroke="#1F1612" stroke-width="4.5" stroke-linecap="round"/>
+
+      <!-- Right Eye -->
+      <path d="M312,196 Q322,190 335,195 Q322,202 312,196 Z" fill="#FFF"/>
+      <ellipse cx="323" cy="195" rx="4" ry="4" fill="#69160F"/>
+      <circle cx="323" cy="195" r="2.5" fill="#1C1410"/>
+      <circle cx="324.5" cy="193.5" r="1.2" fill="#FFE4D6"/>
+      <path d="M310,192 Q322,185 338,189" stroke="#1F1612" stroke-width="4.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Strong Aquiline Steppe Nose -->
+    <path d="M298,190 L296,218 L288,223 Q300,227 302,223 L304,218 Z" fill="#B36B42"/>
+
+    <!-- Cheekbones and Weathered Lines -->
+    <path d="M260,208 Q275,215 280,225" stroke="#9A562F" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M340,208 Q325,215 320,225" stroke="#9A562F" stroke-width="2" fill="none" opacity="0.6"/>
+
+    <!-- Conical Batyr Helmet (Дулыға) with Fur Trim (Бөрік/Түлкі жиек) -->
+    <!-- Helmet Fur Trim -->
+    <path d="M230,175 C230,165 270,160 300,160 C330,160 370,165 370,175 C370,190 340,195 300,195 C260,195 230,190 230,175 Z" fill="#543825"/>
+    <ellipse cx="300" cy="177" rx="72" ry="14" fill="#3D281A"/>
+
+    <!-- Steel Pointed Helmet Dome (Дулыға күмбезі) -->
+    <path d="M238,168 C242,120 270,60 300,40 C330,60 358,120 362,168 Z" fill="url(#armorSteel)"/>
+    <!-- Dome Gold Inlay (Алтын қақтау) -->
+    <path d="M298,40 L302,40 L306,168 L294,168 Z" fill="url(#goldDecor)"/>
+    <path d="M255,165 C260,130 280,85 300,60" stroke="url(#goldDecor)" stroke-width="2" fill="none"/>
+    <path d="M345,165 C340,130 320,85 300,60" stroke="url(#goldDecor)" stroke-width="2" fill="none"/>
+
+    <!-- Helmet Finial / Spear Spike & Eagle Feather (Үкілі дулыға) -->
+    <polygon points="300,18 296,42 304,42" fill="url(#goldDecor)"/>
+    <circle cx="300" cy="22" r="5" fill="#FFEBB3"/>
+    <!-- Eagle Owl Plume (Үкі қауырсыны) -->
+    <path d="M300,20 C310,5 325,-5 335,-8 C330,8 318,18 302,22 Z" fill="#ECE1CD" stroke="#A9957B" stroke-width="1"/>
+    <path d="M300,20 C290,5 280,-2 270,-4 C280,8 290,16 298,22 Z" fill="#DFD2BD" stroke="#A9957B" stroke-width="1"/>
+
+    <!-- Chainmail Aventail hanging from Helmet (Көбелі шығыршық мойын жапқыш) -->
+    <path d="M236,170 C220,200 220,250 240,290 L255,275 C240,235 240,190 246,170 Z" fill="url(#armorSteel)"/>
+    <path d="M364,170 C380,200 380,250 360,290 L345,275 C360,235 360,190 354,170 Z" fill="url(#armorSteel)"/>
+
+    <!-- Round Kazakh War Shield on Back/Side (Қалқан) -->
+    <g transform="translate(110, 480)" opacity="0.95">
+      <circle cx="0" cy="0" r="95" fill="#2E231C" stroke="url(#goldDecor)" stroke-width="6"/>
+      <circle cx="0" cy="0" r="80" fill="url(#armorSteel)" stroke="#111" stroke-width="2"/>
+      <circle cx="0" cy="0" r="60" fill="none" stroke="url(#goldDecor)" stroke-width="3" stroke-dasharray="8,6"/>
+      <!-- Shield Boss (Кү Steppe Boss) -->
+      <circle cx="0" cy="0" r="28" fill="url(#goldDecor)" stroke="#584013" stroke-width="2"/>
+      <circle cx="0" cy="0" r="10" fill="#1B4958"/>
+    </g>
+
+    <!-- Battle Spear Shaft (Сүңгі Найза) -->
+    <line x1="490" y1="80" x2="440" y2="760" stroke="#482F18" stroke-width="12" stroke-linecap="round"/>
+    <polygon points="492,60 484,110 500,110" fill="url(#armorSteel)" stroke="url(#goldDecor)" stroke-width="2"/>
+    <!-- Red Horsehair Tuft on Spear (Найза шашағы) -->
+    <path d="M485,110 C465,130 460,160 475,180 C485,150 495,130 495,110 Z" fill="#9E2A2B"/>
+  </g>
+
+  <!-- Ornate Golden Frame Overlay with Kazakh Motifs -->
+  <rect x="15" y="15" width="570" height="770" fill="none" stroke="url(#goldDecor)" stroke-width="4"/>
+  <rect x="25" y="25" width="550" height="750" fill="none" stroke="url(#goldDecor)" stroke-width="1.5" stroke-dasharray="10,6" opacity="0.8"/>
+  
+  <!-- Four Ornate Corners (Бұрыштық оюлар) -->
+  <g fill="url(#goldDecor)">
+    <!-- Top-Left -->
+    <path d="M25,25 L80,25 C70,35 60,45 60,60 C45,60 35,70 25,80 Z"/>
+    <!-- Top-Right -->
+    <path d="M575,25 L520,25 C530,35 540,45 540,60 C555,60 565,70 575,80 Z"/>
+    <!-- Bottom-Left -->
+    <path d="M25,775 L80,775 C70,765 60,755 60,740 C45,740 35,730 25,720 Z"/>
+    <!-- Bottom-Right -->
+    <path d="M575,775 L520,775 C530,765 540,755 540,740 C555,740 565,730 575,720 Z"/>
+  </g>
+
+  <!-- Title Ribbon at Bottom -->
+  <rect x="60" y="720" width="480" height="42" rx="6" fill="#1C1410" stroke="url(#goldDecor)" stroke-width="2" opacity="0.92"/>
+  <text x="300" y="747" font-family="'Cormorant Garamond', Georgia, serif" font-size="22" font-weight="bold" fill="#FFEBB3" text-anchor="middle" letter-spacing="3">ҚАЛДЫБАЙ ҚОСАЯҚҰЛЫ</text>
+</svg>

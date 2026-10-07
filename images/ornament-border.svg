@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 40" width="100%" height="40" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="ribbonGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C5A059" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#C5A059"/>
+      <stop offset="50%" stop-color="#FFEBB3"/>
+      <stop offset="85%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#C5A059" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="kzPattern" width="60" height="40" patternUnits="userSpaceOnUse">
+      <path d="M0,20 Q15,0 30,20 Q45,40 60,20" fill="none" stroke="#C5A059" stroke-width="2"/>
+      <path d="M15,20 C10,12 5,12 5,16 C5,20 12,24 18,20" fill="none" stroke="#E4C882" stroke-width="2"/>
+      <path d="M45,20 C50,28 55,28 55,24 C55,20 48,16 42,20" fill="none" stroke="#E4C882" stroke-width="2"/>
+      <circle cx="30" cy="20" r="3" fill="#FFEBB3"/>
+      <circle cx="0" cy="20" r="2.5" fill="#FFEBB3"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="1200" height="40" fill="url(#kzPattern)" opacity="0.85"/>
+  <line x1="0" y1="2" x2="1200" y2="2" stroke="url(#ribbonGold)" stroke-width="2"/>
+  <line x1="0" y1="38" x2="1200" y2="38" stroke="url(#ribbonGold)" stroke-width="2"/>
+</svg>
